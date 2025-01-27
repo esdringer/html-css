@@ -12,12 +12,19 @@
         table {
             border-collapse: collapse;
             width: 450px;
+            position: relative;
         }
 
         thead {
             background-color: rgb(119, 115, 115);
             color: white;
-            height: 80px;
+            height: 50px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(119, 115, 115);
         }
 
         th {
