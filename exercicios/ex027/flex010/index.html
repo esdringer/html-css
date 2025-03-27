@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink/Grow</title>
+    <style>
+        main.container {
+            background-color: blue;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        section.item {
+            background-color: green;
+            color: white;
+            padding: 20px 0px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        section#i1 {
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        section#i2 {
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+        section#i3 {
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 5;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item" id="i1">A</section>
+        <section class="item" id="i2">B</section>
+        <section class="item" id="i3">C</section>
+    </main>
+</body>
+</html>
