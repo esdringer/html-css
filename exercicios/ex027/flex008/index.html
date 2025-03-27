@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Self</title>
+    <style>
+        main.container {
+            background-color: blue;
+            display: flex;
+            height: 300px;
+            align-items: flex-start;
+        }
+
+        section.item {
+            background-color: green;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        section#i1 {
+            align-self: center;
+        }
+        section#i2 {
+            align-self: auto;
+        }
+        section#i3 {
+            align-self: stretch;
+        }
+        section#i4 {
+            align-self: flex-end;
+        }
+        section#i5 {
+            align-self: center;
+        }
+        section#i6 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item" id="i1">A</section>
+        <section class="item" id="i2">B</section>
+        <section class="item" id="i3">C</section>
+        <section class="item" id="i4">D</section>
+        <section class="item" id="i5">E</section>
+        <section class="item" id="i6">F</section>
+    </main>
+</body>
+</html>
