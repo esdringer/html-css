@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+    header {
+        flex-flow: column wrap;
+    }
+
+    header > h1 {
+        flex: initial;
+    }
+
+    nav {
+        flex-flow: column wrap;
+    }
+
+    nav > a {
+        width: 60vw;
+    }
+}
