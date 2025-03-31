@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Flexível</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        main {
+            background-color: rgb(191, 191, 191);
+            padding: 20px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        main section h2 {
+            font-size: 1.7em;
+            margin-bottom: 10px;
+        }
+
+        main section p {
+            margin-bottom: 10px;
+            text-indent: 20px;
+            line-height: 1.6em;
+        }
+
+        section.primeira {
+            margin-bottom: 20px;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.assunto-primeira {
+            flex: 1 1 500px;
+        }
+
+        section.segunda {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.assunto-segunda {
+            flex: 1 1 500px;
+        }
+
+        div.video {
+            flex: 0 1 500px;
+        }
+
+        div.foto {
+            flex: 0 1 500px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        div.video > iframe {
+            width: 100%;
+        }
+
+        footer {
+            padding: 20px;
+        }
+
+        footer > h2 {
+            font-size: 1.7em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de conteúdo Flexível</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt, atque voluptatum accusantium porro soluta maiores quia perferendis alias sit veritatis, nobis dicta nihil quo totam dolor dolorum, voluptatibus suscipit.</p>
+    </header>
+    <main>
+        <section class="primeira">
+            <div class="assunto-primeira">
+                <h2>Exemplo media -> text</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deleniti amet excepturi temporibus quam voluptate illum laboriosam hic nostrum reprehenderit ex nam ea commodi, possimus id at doloribus earum labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro mollitia nemo soluta sint, cupiditate, suscipit voluptas sequi quam dolores optio atque laboriosam numquam beatae reiciendis temporibus delectus voluptatem quo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minima perferendis architecto doloremque praesentium expedita iure, delectus quas nisi qui corporis nobis neque veniam natus error fugiat cumque, quisquam fugit.</p>
+            </div>
+            <div class="foto">
+                <img src="imagem/pngtree-edutech-illustration-design-with-transparent-background-png-image_6392629.jpg" alt="Tecnologia">
+            </div>
+        </section>
+        <section class="segunda">
+            <div class="assunto-segunda">
+                <h2>Exemplo text -> media</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit, id modi doloribus cupiditate ut assumenda commodi minima inventore voluptates iusto eum tempora a alias vel autem in, quisquam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ipsum minima enim veniam maiores libero nisi officiis illo exercitationem hic est ut aliquid, ipsa, eos modi esse natus reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem pariatur necessitatibus! Voluptate dolorem aspernatur, facere nam ea iste quam itaque aliquam amet dolore sequi eius quidem illum omnis id! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit commodi dolore mollitia, harum asperiores hic repellendus beatae perferendis. Ut non nemo id dignissimos. Maiores vel ea nulla rem nostrum.</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcQ5WDUUB0o?si=v_xHAieyjDpNVJyd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Conteúdo normal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati culpa laudantium, ex adipisci deserunt totam id accusantium corporis, enim ab nulla quaerat! Eaque quidem perspiciatis ipsum necessitatibus laboriosam laudantium a?</p>
+    </footer>
+</body>
+</html>
