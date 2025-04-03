@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            display: grid;
+            grid-auto-rows: 100px;
+            gap: 5px;
+        }
+
+        .item {
+            background-color: blue;
+        }
+
+        header {
+            grid-column: span 3;
+        }
+
+        nav {
+            grid-column: span 3;
+        }
+
+        aside {
+            grid-column: 1;
+        }
+
+        section {
+            grid-column: span 3;
+        }
+
+        main {
+            grid-column: 2/ span 2;
+        }
+
+        footer {
+            grid-column: span 3;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="item">
+        cabeçalho
+    </header>
+    <nav class="item">
+        navegação
+    </nav>
+    <aside class="item">
+        conteúdo alternativo
+    </aside>
+    <main class="item">
+        conteúdo principal
+    </main>
+    <section class="item">
+        seção
+    </section>
+    <footer class="item">
+        rodapé
+    </footer>
+</body>
+</html>
