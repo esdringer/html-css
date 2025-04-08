@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min/Max-content</title>
+    <style>
+        div.container {
+            display: grid;
+            grid-template-columns: min-content 300px max-content;
+            gap: 10px;
+        }
+
+        div.container > p {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odit eveniet. Eum a quos repellendus dolorem aspernatur nobis minus qui culpa quas ut facere accusamus assumenda, adipisci veniam reiciendis repellat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto eaque sint similique provident corrupti incidunt consectetur inventore, vitae asperiores, perspiciatis autem blanditiis minus ipsum. Temporibus, facere similique. Deserunt, ut!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto eaque sint similique provident corrupti incidunt consectetur inventore, vitae asperiores, perspiciatis autem blanditiis minus ipsum. Temporibus, facere similique. Deserunt, ut!</p>
+    </div>
+</body>
+</html>
