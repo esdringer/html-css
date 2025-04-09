@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        input::placeholder {
+            text-align: center;
+            color: blue;
+            font-style: italic;
+            font-weight: bold;
+            opacity: .3;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.482);
+            background-color: rgb(228, 228, 228);
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        input:valid {
+            border: 2px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classe :valid e :invalid</h1>
+    <form method="get">
+        <p><label for="iusu">Usuário:</label>
+            <input type="text" name="Usu" id="iusu" required maxlength="30" placeholder="nome completo">
+        </p>
+        <p><label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p><label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="12" placeholder="6 à 12 caracteres">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

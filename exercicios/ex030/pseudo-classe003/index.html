@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        ul > li:not(.unicos):not(.outros) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classe :not</h1>
+    <ul>
+        <li class="unicos">item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li class="unicos">item de lista</li>
+        <li>item de lista</li>
+        <li class="unicos">item de lista</li>
+        <li>item de lista</li>
+        <li class="outros">item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+    </ul>
+</body>
+</html>

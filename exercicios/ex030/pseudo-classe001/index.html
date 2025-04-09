@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.504);
+        }
+
+        form:focus-within {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classe Focus.</h1>
+    <p>A pseudo-classe :focus, serve para selecionar um elemento que está com foto e atribuir a ele, algum tipo de configuração extra.</p>
+
+    <form method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

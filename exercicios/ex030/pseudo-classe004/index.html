@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        input[type="checkbox"]:checked + label {
+            font-weight: bold;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classe Checked</h1>
+    <form method="get">
+        <p><input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label></p>
+        <p><input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label></p>
+        <p><input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label></p>
+        <p><input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label></p>
+    </form>
+</body>
+</html>
