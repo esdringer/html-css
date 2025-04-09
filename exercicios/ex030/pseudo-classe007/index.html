@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        div > p:nth-of-type(2) {
+            color: greenyellow;
+        }
+
+        :is(h1, div > li) {
+            opacity: .3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classe :nth-of-type</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error eveniet dolore inventore fugit corporis earum, voluptates, porro accusamus, magni sapiente nesciunt vero! Nobis dolor, ex ad reprehenderit cumque facilis!</p>
+        <h2>Texto alternativo</h2>
+        <li>Nome</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor velit iusto error autem doloribus? Omnis sint maxime animi nisi saepe fuga perferendis culpa aut. Quas odio tempore laudantium incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam soluta minima ipsa! Ex sed odio dolorem qui voluptas ducimus dolorum officia laudantium quas animi quibusdam reprehenderit, beatae omnis vero.</p>
+    </div>
+</body>
+</html>
