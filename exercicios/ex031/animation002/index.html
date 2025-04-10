@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #ccc;
+            background-image: url('imagens/pexels-photo-ondas-do-mar.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.principal {
+            border: 2px solid white;
+            border-radius: 20px;
+            max-width: 450px;
+            padding: 20px;
+            backdrop-filter: blur(0px);
+            overflow: hidden;
+            transition: backdrop-filter .5s ease;
+        }
+
+        div.principal:hover {
+            backdrop-filter: blur(10px);
+        }
+
+        div.principal:hover .secundaria {
+            left: 0px;
+        }
+
+        div.secundaria {
+            color: white;
+            position: relative;
+            left: -500px;
+            transition: left .7s ease;
+        }
+
+        div.secundaria > h1 {
+            margin-bottom: 10px;
+        }
+
+        div.secundaria > p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="secundaria">
+            <h1>Efeito de Vidro Fosco.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem suscipit, tempora, veniam dicta quasi, quis delectus enim assumenda quae beatae fugit dolorum! Asperiores recusandae, fugiat soluta labore dignissimos libero inventore.</p>
+        </div>
+    </div>
+</body>
+</html>
