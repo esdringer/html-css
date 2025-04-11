@@ -8,61 +8,61 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             width: 100%;
             height: 100vh;
-            background-color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(213, 204, 204);
             background-image: url('imagens/pexels-photo-ondas-do-mar.jpeg');
             background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        div.principal {
-            border: 2px solid white;
+        div.container {
+            width: 450px;
+            min-height: 180px;
+            border: 3px solid white;
             border-radius: 20px;
-            max-width: 450px;
             padding: 20px;
             backdrop-filter: blur(0px);
+            position: relative;
             overflow: hidden;
             transition: backdrop-filter .5s ease;
         }
 
-        div.principal:hover {
+        div.container:hover {
             backdrop-filter: blur(10px);
         }
 
-        div.principal:hover .secundaria {
-            left: 0px;
+        div.container:hover .item {
+            left: 20px;
         }
 
-        div.secundaria {
-            color: white;
-            position: relative;
-            left: -500px;
+        div.item {
+            max-width: 420px;
+            position: absolute;
+            left: -460px;
             transition: left .7s ease;
         }
 
-        div.secundaria > h1 {
+        div.item > h1 {
             margin-bottom: 10px;
-        }
-
-        div.secundaria > p {
-            text-align: justify;
-            text-indent: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="principal">
-        <div class="secundaria">
-            <h1>Efeito de Vidro Fosco.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem suscipit, tempora, veniam dicta quasi, quis delectus enim assumenda quae beatae fugit dolorum! Asperiores recusandae, fugiat soluta labore dignissimos libero inventore.</p>
+    <div class="container">
+        <div class="item">
+            <h1>Efeito de vidro fosco.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo labore eius repellat qui fugiat ullam, officia accusantium rem culpa porro facere asperiores. Quod soluta esse, ipsa commodi error doloribus officiis.</p>
         </div>
     </div>
 </body>

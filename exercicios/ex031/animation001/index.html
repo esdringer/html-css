@@ -9,22 +9,20 @@
             margin: 0;
             padding: 0;
         }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
         }
 
-        h1 {
-            margin: 30px 0px;
+        nav {
+            text-align: center;
+            margin-top: 30px;
         }
 
         nav > a {
             text-decoration: none;
-            color: rgb(88, 88, 88);
-            padding: 10px;
-            margin: 5px;
+            color: gray;
             font-size: 2em;
+            padding: 10px;
             position: relative;
         }
 
@@ -32,25 +30,23 @@
             content: " ";
             width: 0%;
             height: 3px;
-            background-color: black;
+            background-color: gray;
             position: absolute;
             bottom: 0;
             left: 0;
-            transition: .5s ease;
+            transition: width .7s ease;
         }
 
         nav > a:hover::after {
             width: 100%;
         }
-
     </style>
 </head>
 <body>
-    <h1>Animações com CSS</h1>
     <nav>
         <a href="#">Home</a>
         <a href="#">Sobre</a>
-        <a href="#">Contatos</a>
+        <a href="#">Contato</a>
         <a href="#">Blog</a>
     </nav>
 </body>
