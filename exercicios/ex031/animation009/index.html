@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.7em;
+            font-weight: lighter;
+            color: white;
+            background-image: linear-gradient(to right, blue, rgb(91, 91, 229));
+            border: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            scale: 1.1;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 255, 0.508));
+            animation: button .5s linear infinite alternate;
+        }
+
+        @keyframes button {
+            0% {
+                scale: 1;
+            }
+
+            100% {
+                scale: 1.1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>Compre Aqui</button>
+</body>
+</html>
