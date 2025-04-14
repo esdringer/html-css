@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 4em;
+        }
+
+        span {
+            position: relative;
+        }
+
+        span::before {
+            content: " ";
+            color: rgb(206, 61, 85);
+            animation: palavras 10s infinite;
+        }
+
+        span::after {
+            content: " ";
+            height: 100%;
+            width: calc(100% + 10px);
+            background-color: white;
+            border-left: 3px solid rgb(206, 61, 85);
+            position: absolute;
+            right: -10px;
+            animation: cursor .8s infinite;
+            animation: desloca 10s steps(15) infinite;
+        }
+
+        @keyframes desloca {
+            10%, 25%, 30%, 35%, 50%, 55%, 70%, 75%, 90% {
+                width: 0;
+            }
+
+            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+                width: calc(100% + 10px);
+            }
+        }
+
+        @keyframes cursor {
+            0% {
+                border-left: 3px solid rgb(206, 61, 85);
+            }
+
+            100% {
+                border-left: 3px solid rgb(255, 255, 255);
+            }
+        }
+
+        @keyframes palavras {
+            0%, 20% {
+                content: "disciplinado";
+            }
+
+            21%, 40% {
+                content: "iluminado";
+            }
+
+            41%, 60% {
+                    content: "predestinado";
+                }
+
+            61%, 80% {
+                content: "abençoado";
+                }
+
+            81%, 100% {
+                content: "escolhido";
+            }
+            }
+    </style>
+</head>
+<body>
+    <div>
+        Eu sou <span></span>
+    </div>
+</body>
+</html>

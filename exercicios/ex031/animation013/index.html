@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+    <title>Animação</title>
+    <style>
+       * {
+          margin: 0;
+          padding: 0;
+       }
+
+       body {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+
+       div {
+          width: 100px;
+          height: 100px;
+          border-radius: 20px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          overflow: hidden;
+       }
+
+       div::before {
+          content: " ";
+          width: 100px;
+          height: 100px;
+          border-radius: 20px;
+          background-color: blue;
+          position: absolute;
+          top: 90%;
+          left: -90%;
+          z-index: -1;
+       }
+
+       div:hover::before {
+          top: 0;
+          left: 0;
+          transition: .5s;
+          animation: deslocamento .5s linear;
+       }
+
+       div:hover .material-symbols-outlined {
+          color: white;
+          font-size: 4em;
+       }
+
+       .material-symbols-outlined {
+          color: blue;
+          font-size: 3em;
+       }
+
+       @keyframes deslocamento {
+          0% {
+               top: 90%;
+               left: -90%;
+          }
+
+          50% {
+               top: -20%;
+               left: 20%;
+          }
+
+          100% {
+               top: 0;
+               left: 0;
+          }
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="material-symbols-outlined">
+            person
+        </span>
+    </div>
+</body>
+</html>
