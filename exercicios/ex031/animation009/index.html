@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação</title>
+    <title>Animação - Botão Pulsante</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
@@ -20,34 +19,34 @@
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 1.7em;
-            font-weight: lighter;
+            width: 220px;
+            height: 60px;
+            border: 0;
+            border-radius: 20px;
+            background-color: blue;
             color: white;
-            background-image: linear-gradient(to right, blue, rgb(91, 91, 229));
-            border: 0px;
-            border-radius: 10px;
-            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            transform: scale(1);
         }
 
         button:hover {
-            scale: 1.1;
-            filter: drop-shadow(5px 5px 10px rgba(0, 0, 255, 0.508));
-            animation: button .5s linear infinite alternate;
+            animation: pulsar .6s linear infinite alternate;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 255, 0.452));
         }
 
-        @keyframes button {
+        @keyframes pulsar {
             0% {
-                scale: 1;
+                transform: scale(1);
             }
 
             100% {
-                scale: 1.1;
+                transform: scale(1.2);
             }
         }
     </style>
 </head>
 <body>
-    <button>Compre Aqui</button>
+    <button>Compre Agora!</button>
 </body>
 </html>

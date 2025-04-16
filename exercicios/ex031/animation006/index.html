@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação</title>
+    <title>Animação - Overlay</title>
     <style>
         * {
             margin: 0;
@@ -11,22 +11,25 @@
         }
 
         body {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            background-color: #c2c2c2;
             background-image: url('imagens/pexels-timmossholder-1154738.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
         }
 
         div {
-            background-color: black;
             width: 100%;
             height: 100%;
-            opacity: .0;
-            transition: opacity .5s ease;
+            background-color: black;
+            opacity: 0;
+            transition: .3s;
         }
 
         div:hover {
-            opacity: .4;
+            opacity: .3;
         }
     </style>
 </head>

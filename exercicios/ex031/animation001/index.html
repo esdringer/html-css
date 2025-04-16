@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação</title>
+    <title>Menu Animado</title>
     <style>
         * {
             margin: 0;
             padding: 0;
         }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
         }
 
         nav {
-            text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         nav > a {
             text-decoration: none;
             color: gray;
-            font-size: 2em;
-            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8em;
+            padding: 5px;
+            margin-inline: 5px;
             position: relative;
         }
 
         nav > a::after {
-            content: " ";
-            width: 0%;
-            height: 3px;
-            background-color: gray;
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
-            transition: width .7s ease;
+            width: 0;
+            height: 3px;
+            background-color: gray;
+            transition: .5s cubic-bezier(.36,.68,.94,.08);
+            transition-delay: .1s;
         }
 
         nav > a:hover::after {
@@ -45,8 +51,8 @@
 <body>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Sobre</a>
         <a href="#">Contato</a>
+        <a href="#">Sobre</a>
         <a href="#">Blog</a>
     </nav>
 </body>

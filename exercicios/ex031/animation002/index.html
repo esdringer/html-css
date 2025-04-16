@@ -3,54 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação</title>
+    <title>Blur</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            background-color: gray;
+            color: white;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(213, 204, 204);
             background-image: url('imagens/pexels-photo-ondas-do-mar.jpeg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         div.container {
-            width: 450px;
-            min-height: 180px;
+            width: 420px;
+            height: 170px;
             border: 3px solid white;
             border-radius: 20px;
-            padding: 20px;
-            backdrop-filter: blur(0px);
+            backdrop-filter: blur(0);
             position: relative;
             overflow: hidden;
-            transition: backdrop-filter .5s ease;
+            transition: .3s;
         }
 
         div.container:hover {
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px)
         }
 
-        div.container:hover .item {
-            left: 20px;
+        div.container:hover div.item {
+            left: 0;
         }
 
         div.item {
-            max-width: 420px;
+            width: 400px;
+            height: 170px;
+            padding: 20px;
             position: absolute;
-            left: -460px;
-            transition: left .7s ease;
+            left: -110%;
+            transition: .5s ease;
         }
 
         div.item > h1 {
@@ -61,8 +61,8 @@
 <body>
     <div class="container">
         <div class="item">
-            <h1>Efeito de vidro fosco.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo labore eius repellat qui fugiat ullam, officia accusantium rem culpa porro facere asperiores. Quod soluta esse, ipsa commodi error doloribus officiis.</p>
+            <h1>Efeito de Vidro Fosco.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem at ut aliquid provident ea enim eveniet sequi veniam, sunt inventore a eum quos quam molestiae quis dolore ipsum itaque!</p>
         </div>
     </div>
 </body>
