@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(7, 7, 53);
+    color: white;
+}
+
+header {
+    background-color: rgb(7, 7, 53);
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-left: 20px;
+}
+
+header h1 span {
+    color: blueviolet;
+}
+
+nav  {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 8px;
+    padding: 5px;
+    margin-inline: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: blueviolet;
+    border-radius: 8px;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+header button {
+    display: none;
+    padding: 10px;
+    font-size: 1.3em;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-right: 20px;
+    transition: .3s ease;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 230px 30px 30px;
+    gap: 10px;
+}
+
+main .img div {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    margin-inline: auto;
+}
+
+main .txt {
+    padding-top: 20px;
+}
+
+main .txt h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .txt h2 span {
+    color: blueviolet;
+}
+
+main .txt h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .txt h1 span {
+    color: blueviolet;
+}
+
+main .txt p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: justify;
+    text-indent: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+main .redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+main .redes ul {
+    display: flex;
+    gap: 10px;
+}
+
+main .redes ul li {
+    list-style-type: none;
+}
+
+main .redes ul li i {
+    font-size: 1.4em;
+    color: blueviolet;
+}
+
+main .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main .button button {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: .3s ease;
+}
+
+main .button button:hover {
+    transform: scale(1.1);
+}
