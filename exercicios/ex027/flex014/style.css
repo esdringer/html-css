@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+header, .normal, .flex-content {
+    padding: 20px;
+}
+
+p, h1, h2 {
+    margin-bottom: 20px;
+}
+
+.flex-content {
+    background-color: rgb(202, 201, 201);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.media-text {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap-reverse;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1 1 500px;
+}
+
+.media {
+    flex: 1 1 500px;
+}
+
+.media img {
+    display: block;
+    margin: auto;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
