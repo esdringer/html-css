@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: rgb(8, 8, 61);
+    --cor-secundaria: orangered;
+
+    --fonte-principal: Arial, Helvetica, sans-serif; 
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+}
